@@ -1,0 +1,184 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>xRom4ㅤャ IMG TO URL</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       WALLPAPER IMAGE URL
+       මෙතන ඔයාගේ wallpaper direct image link එක දාන්න
+       ===================================================== -->
+
+  <script>
+    const WALLPAPER_URL = "https://ibb.co/DgDCHG1k";
+
+    document.documentElement.style.setProperty(
+      "--wallpaper",
+      `url("${WALLPAPER_URL}")`
+    );
+  </script>
+
+
+  <div class="background"></div>
+
+  <main class="container">
+
+    <!-- NEON LOGO -->
+    <header class="header">
+
+      <h1>
+        xRom4ㅤャ IMG TO URL
+      </h1>
+
+      <p>
+        FAST • SIMPLE • DIRECT IMAGE URL
+      </p>
+
+    </header>
+
+
+    <!-- UPLOAD CARD -->
+    <section class="upload-card">
+
+      <div
+        id="dropArea"
+        class="drop-area"
+      >
+
+        <div class="upload-icon">
+          🖼️
+        </div>
+
+        <h2>
+          Upload Your Image
+        </h2>
+
+        <p>
+          Click here or drag & drop your image
+        </p>
+
+        <span class="limit">
+          Maximum file size: <b>200 MB</b>
+        </span>
+
+        <span class="formats">
+          JPG • PNG • WEBP • GIF
+        </span>
+
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          hidden
+        >
+
+      </div>
+
+
+      <!-- PROGRESS -->
+      <div
+        id="progressContainer"
+        class="progress-container"
+      >
+
+        <div class="progress-info">
+
+          <span id="fileName">
+            Uploading...
+          </span>
+
+          <span id="progressPercent">
+            0%
+          </span>
+
+        </div>
+
+        <div class="progress">
+
+          <div
+            id="progressBar"
+            class="progress-bar"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- STATUS -->
+      <div
+        id="status"
+        class="status"
+      ></div>
+
+
+      <!-- RESULT -->
+      <div
+        id="result"
+        class="result"
+      >
+
+        <img
+          id="preview"
+          class="preview"
+          alt="Uploaded image"
+        >
+
+        <div class="url-box">
+
+          <input
+            id="imageUrl"
+            type="text"
+            readonly
+          >
+
+        </div>
+
+
+        <div class="buttons">
+
+          <button id="copyButton">
+            📋 Copy URL
+          </button>
+
+          <button
+            id="openButton"
+            class="secondary"
+          >
+            ↗ Open
+          </button>
+
+          <button
+            id="anotherButton"
+            class="secondary"
+          >
+            ⬆ Upload Another
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      © 2026 xRom4ㅤャ IMG TO URL
+    </footer>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
